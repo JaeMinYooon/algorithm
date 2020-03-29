@@ -1,4 +1,5 @@
-package Level1; // ¾î·Á¿ö¼­ ÈùÆ® º½...
+package Level1;
+// ¾î·Á¿ö¼­ ÈùÆ® º½...
 public class Ã¼À°º¹ {
 
 	public static void main(String[] args) {

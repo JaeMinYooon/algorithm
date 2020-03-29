@@ -1,4 +1,5 @@
-package Level1;import java.util.Arrays;
+package Level1;
+import java.util.Arrays;
 
 public class 완주하지못한선수 {
 
