@@ -1,6 +1,5 @@
 package Level1;
 import java.util.Arrays;
-
 public class 완주하지못한선수 {
 
 	public static void main(String[] args) {
