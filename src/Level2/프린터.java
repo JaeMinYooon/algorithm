@@ -1,42 +1,46 @@
 package Level2;
 
-import java.util.Vector;
+import java.util.LinkedList;
 
 public class 프린터 {
 
 	public static void main(String[] args) {
-		int [] priorities = {1,1,9,1,1,1};
-		int location = 1;
+		int [] priorities = {1,2,3};
+		int location = 0;
 		solution(priorities, location);
 
 	}
 	
 	public static int solution(int[] priorities, int location) {
-	        int answer = 0;
-	        int max = 0, index = 0, newnum = 0;
-	        Vector<Integer> v = new Vector<>();
-	        for(int i = 0 ; i < priorities.length ; i++) {
-	        	v.add(priorities[i]);
-	        }
-	        
-	        for(int i = 0 ; i < priorities.length ; i++) {
-	        	max = -1;
-	        	for(int j = index ; j < v.size()+index ; j++) {
-	        		newnum = j%v.size();
-		        	if(max < v.get(newnum)){
-		        		max = v.get(newnum);
-		        		index = newnum;
-		        	}
-		        }
-	        	
-	        	answer++;
-	        	System.out.println(v.toString() + " | " +location%v.size()+ " | " + (i+index)%v.size() + " | " + i + index + v.size());
-	        	if(location%v.size() == (i+index)%v.size()) { // 나누어 떨어지면 안되는 경우를 넣어야함
-	        		break;
-	        	}
-        		v.remove(index);
-	        }
-	        System.out.println(answer);
-	        return answer;
-	    }
+		int answer = 0;
+        LinkedList<Integer> q = new LinkedList<Integer>();
+        
+        for(int i = 0; i < priorities.length; i++) q.add(priorities[i]);
+        
+        while(!q.isEmpty()){
+            boolean isCheck = false;
+            int first = q.getFirst();
+            for(int i = 1; i < q.size(); i++){
+                if(first < q.get(i)){
+                    isCheck = true;
+                    break;
+                }
+            }
+            
+            if(isCheck){ //첫 번째 원소보다 큰 수가 대기목록에 있는 경우
+                q.removeFirst();
+                q.add(first);
+                
+                if(location == 0) location = q.size() - 1;
+                else location--;
+            }
+            else{ //첫 번째 원소가 가장 큰 경우
+                q.removeFirst();
+                answer++;
+                if(location == 0) break;
+                else location--;
+            }
+        }
+        return answer;
+    }
 }
