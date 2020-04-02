@@ -19,14 +19,11 @@ public class 기능개발 {
         			break;
         		}
         	}
-        	//pass.add(i,0);
-        }
+        	}
         int cnt=0;
         for(int i = 0 ; i < pass.size() ; i++) {
         	cnt = 1;
-        	System.out.println(i);
         	for(int j = i + 1 ; j < pass.size() ; j++) {
-        		System.out.println(pass.get(i) + " | " + pass.get(j));
         		if(pass.get(i)>=pass.get(j)) {
         			cnt++;
         			pass.remove(j);
@@ -36,11 +33,9 @@ public class 기능개발 {
         			break;
         		}
         	}
-        	System.out.println(pass.toString() + " | cnt = " + cnt);
         	v.add(cnt);
         		
         }
-        System.out.println(v.toString());
         answer = new int[v.size()];
         for(int i = 0 ; i < v.size(); i++) {
         	answer[i] = v.get(i);
