@@ -3,37 +3,63 @@ package Level2;
 import java.util.Vector;
 
 public class 기능개발 {
-	아직안됐다... 다시해보자 지금 문제는 연속으로 나오면 짤리지 않음 + 인덱스 값 구하기
 	public static void main(String[] args) {
-		int []progresses = {93, 30, 100,55, 100, 40};
-		int []speeds     = {1,  30,  0,  5,   0, 40};
+		int []progresses = {93, 30,40, 55};
+		int []speeds     = {1,  30,50,  5};
 		solution(progresses, speeds);
 	}
 	public static int[] solution(int[] progresses, int[] speeds) {
 		int[] answer = {};
-        int[] pass = new int[progresses.length];
-        int cnt = 0;
-        Vector<Integer> v = new Vector<Integer>();
-        int sum = 1;
-        for(int i = 0 ; i < speeds.length ; i++) {
-        	for(int j = 1 ; j < 100 ; j++) {
-        		if(progresses[i]+speeds[i]*j >= 100) {
-        			pass[i] = j;
+		Vector<Integer> pass = new Vector<Integer>();
+		Vector <Integer> v = new Vector<Integer>();
+        for(int i = 0 ; i < progresses.length ; i++) {
+        	for ( int j = 0 ; j <= 100 ; j++) {
+        		if(progresses[i] + (speeds[i] * j) >= 100) {
+        			pass.add(j);
         			break;
         		}
         	}
-        	v.add(pass[i]);
+        	//pass.add(i,0);
         }
-        for(int i = 0 ; i < v.size()-1; i++) {
-        	if(v.get(i) >= v.get(i+1)) {
-        		v.remove(i+1);
+        int cnt=0;
+        for(int i = 0 ; i < pass.size() ; i++) {
+        	cnt = 1;
+        	System.out.println(i);
+        	for(int j = i + 1 ; j < pass.size() ; j++) {
+        		System.out.println(pass.get(i) + " | " + pass.get(j));
+        		if(pass.get(i)>=pass.get(j)) {
+        			cnt++;
+        			pass.remove(j);
+        			j--;
+        		}
+        		else {
+        			break;
+        		}
         	}
+        	System.out.println(pass.toString() + " | cnt = " + cnt);
+        	v.add(cnt);
+        		
         }
         System.out.println(v.toString());
         answer = new int[v.size()];
-        for(int i = 0 ; i < v.size() ; i++) {
+        for(int i = 0 ; i < v.size(); i++) {
         	answer[i] = v.get(i);
         }
         return answer;
     }
 }
+
+/*
+ *  public int[] solution(int[] progresses, int[] speeds) {
+        int[] dayOfend = new int[100];
+        int day = -1;
+        for(int i=0; i<progresses.length; i++) {
+            while(progresses[i] + (day*speeds[i]) < 100) {
+                day++;
+            }
+            dayOfend[day]++;
+        }
+        return Arrays.stream(dayOfend).filter(i -> i!=0).toArray();
+    }
+}
+*/
