@@ -34,7 +34,6 @@ public class 기능개발 {
         		}
         	}
         	v.add(cnt);
-        		
         }
         answer = new int[v.size()];
         for(int i = 0 ; i < v.size(); i++) {
