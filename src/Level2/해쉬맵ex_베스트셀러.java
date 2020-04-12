@@ -12,6 +12,7 @@ public class ÇØ½¬¸Êex_º£½ºÆ®¼¿·¯ {
 	public static String solution(String[] book) {
 		HashMap<String, Integer> books = new HashMap<String, Integer>();
 		int max = 0;
+		
 		for(int i = 0 ; i < book.length ; i++) {
 			if(!books.containsKey(book[i]))
 				books.put(book[i], 1);
