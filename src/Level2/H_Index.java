@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class H_Index {
 	//아직 문제 이해 불가.. 먼소린지 ㅠㅠ
+	
+	
 	public static void main(String[] args) {
 		int[] citations = {3,0,6,1,5};
 		
