@@ -1,7 +1,7 @@
 package Level2;
 
 public class 조이스틱 {
-	값은 맞는데 테스트 케이스가 통과되지 않음.
+	//값은 맞는데 테스트 케이스가 통과되지 않음.
 	public static void main(String[] args) {
 		String name ="JEROEN";
 		solution(name);
