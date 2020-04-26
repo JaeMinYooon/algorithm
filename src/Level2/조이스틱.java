@@ -5,7 +5,6 @@ public class ¡∂¿ÃΩ∫∆Ω {
 	public static void main(String[] args) {
 		String name ="JEROEN";
 		solution(name);
-
 	}
 	public static int solution(String name) {
 		int answer= 0;
