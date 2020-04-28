@@ -8,7 +8,7 @@ public class ³â2016 {
 	public static String solution(int a, int b) {
 	      String answer = "";
 	      int sum = 0;
-	      int jan=31, feb=29, mar=31, apr=30, may=31, jun=30, jul=31, aug=31, sep=30,oct=31,nov=30,dec=31; 
+	      int jan=31, feb=29, mar=31, apr=30, may=31, jun=30, jul=31, aug=31, sep=30,oct=31,nov=30; 
 	      switch(a) {
 	      case 1:
 	    	  sum += b;

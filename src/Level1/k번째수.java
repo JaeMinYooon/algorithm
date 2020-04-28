@@ -6,7 +6,6 @@ public class k¹øÂ°¼ö {
 		Scanner scanner = new Scanner(System.in);
 		int [] array = {1,5,2,6,3,7,4};
 		int [] answer;
-		int [][] commands;
 		int start, end, number;
 		start = scanner.nextInt();
 		end = scanner.nextInt();

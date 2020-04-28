@@ -1,6 +1,5 @@
 package Level1;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class 정수내림차순으로배치하기 {
 

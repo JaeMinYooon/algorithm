@@ -8,7 +8,6 @@ public class 완주하지못한선수 {
 		System.out.println(solution(participant, completion));
 	}
 	 public static String solution(String[] participant, String[] completion) {
-	        String answer = "";
 	        Arrays.sort(participant);
 	        Arrays.sort(completion);
 	        int i = 0;
