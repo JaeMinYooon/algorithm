@@ -41,7 +41,6 @@ public class 소수찾기 {
 	    		  String k = Integer.toString(i);
 	    		  String[] array = k.split("");
 	    		  //Arrays.parallelSort(array);
-	    		  
 	    		  System.out.print(k + " | " + array.length);
 	    		  //System.out.println(i);
 	    		  check.clear();
