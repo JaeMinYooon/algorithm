@@ -79,7 +79,8 @@ public class 소수찾기 {
     }
 }
 
-/*
+/* 링크드 리스트로 푼 것 
+ * 더 연습이 필요할 듯.. 
  * import java.util.LinkedList;
 
 class Solution {

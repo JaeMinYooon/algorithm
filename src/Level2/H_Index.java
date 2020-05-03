@@ -20,6 +20,8 @@ public class H_Index {
 	        
 	        answer = citations.length/2 + 1;
 	        
+	        
+	        
 	        return answer;
 	    }
 }
