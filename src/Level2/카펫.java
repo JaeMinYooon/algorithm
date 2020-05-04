@@ -6,5 +6,8 @@ public class Ä«Æê {
 		// TODO Auto-generated method stub
 
 	}
-
+	public static int[] solution(int brown, int red) {
+        int[] answer = {};
+        return answer;
+    }
 }
