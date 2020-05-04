@@ -23,7 +23,6 @@ public class 큰수만들기 {
 					max = number.charAt(j);
 					index = j+1;
 				}
-				
 			}
 			answer += max;
 			
