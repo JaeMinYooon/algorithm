@@ -5,13 +5,12 @@ import java.util.Vector;
 public class Ä«Æê {
 
 	public static void main(String[] args) {
-		int brown = 8;
+		int brown = 6;
 		int red = 1;
 		
 		System.out.println(solution(brown, red));
-
 	}
-	//ÀÌ°Å ´õÇÑ°ÅÀÇ ¾à¼öÀÇ °ö!! ´À³¦ µü¿È
+	//ÀÌ°Å ´õÇÑ°ÅÀÇ ¾à¼öÀÇ °ö!!
 	public static int[] solution(int brown, int red) {
         int[] answer = new int[2];
         int sum = brown + red;
@@ -20,9 +19,8 @@ public class Ä«Æê {
         Vector<Integer> save = new Vector<Integer>();
         
         for(int i = 1 ; i <= sum; i++) {
-        	if((sum%i)==0){
+        	if((sum%i)==0)
         		save.add(i);
-        	}
         }
         System.out.println(save.toString());
         
