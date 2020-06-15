@@ -11,6 +11,7 @@ public class 다음큰숫자 {
 	public static int solution(int n) {
         int answer = 0;
         // 10 일때 11 일때 해서 해야할듯
+        // 영상 마무리중
         
         // 킹만해 할만하다
         // 잠시만 생활패턴 원래대로..
