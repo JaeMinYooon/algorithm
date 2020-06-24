@@ -11,8 +11,8 @@ public class 다음큰숫자 {
 	public static int solution(int n) {
         int answer = 0;
         // 10 일때 11 일때 해서 해야할듯
-        // 최우수 축하 
         
+        // 시험 끝나고 진짜 시작
         return answer;
     }
 }
