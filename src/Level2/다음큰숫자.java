@@ -10,8 +10,9 @@ public class 다음큰숫자 {
 	
 	public static int solution(int n) {
         int answer = 0;
-        // 10 일때 11 일때 해서 해야할듯
+        // 10 일때 11 일때 해서 해야할듯1
       
+        // 과제 제추 가즈아아아
         // 생파 하고 시작
         // 빅데프하면 시작
         // ㄹㅇ ㅋㅋ
