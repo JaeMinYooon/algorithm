@@ -14,7 +14,7 @@ public class 다음큰숫자 {
         // 방학 시작.
 
         // 시작 해보자!
-        
+        // 집중!!
         return answer;
     }
 }
