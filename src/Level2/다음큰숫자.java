@@ -15,6 +15,7 @@ public class 다음큰숫자 {
 
         // 시작 해보자!
         // 집중!!
+        // 2일.. 미치자.
         return answer;
     }
 }
