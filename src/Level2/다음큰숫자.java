@@ -12,6 +12,7 @@ public class 다음큰숫자 {
         int answer = 0;
         // 10 일때 11 일때 해서 해야할듯1
         // 헬스 시작
+        // 실패.
         return answer;
     }
 }
