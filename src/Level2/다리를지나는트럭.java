@@ -17,6 +17,7 @@ public class 다리를지나는트럭 {
         Vector<Integer> store = new Vector<>();
         Vector<Integer> life = new Vector<>();
         
+        //g
         int cnt =0;
         
         for(int i = 0 ; i < truck_weights.length ;i++) {
