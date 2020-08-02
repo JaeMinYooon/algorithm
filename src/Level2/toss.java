@@ -41,6 +41,8 @@ public class toss {
 				return;
 			}
 		}
+		
+		// ≈‰Ω∫º…
 		System.out.println(answer);
 		return;
 	}
