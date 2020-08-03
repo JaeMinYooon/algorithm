@@ -42,7 +42,6 @@ public class toss {
 			}
 		}
 		
-		// ≈‰Ω∫º…
 		System.out.println(answer);
 		return;
 	}
