@@ -43,7 +43,7 @@ public class 다리를지나는트럭 {
 		return answer + bridge_length;
 	}
 }
-
+// 다른사람거
 /*
  class Solution {
     class Truck {
