@@ -44,6 +44,7 @@ public class 다리를지나는트럭 {
 	}
 }
 // 다른사람거
+// 복습 ㄱㄱ
 /*
  class Solution {
     class Truck {
