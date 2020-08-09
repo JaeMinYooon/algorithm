@@ -2,7 +2,6 @@ package Level2;
 
 import java.util.Vector;
 // 문제 구해서 해보기
-// 오픽하구
 public class test {
 	public static void main(String[] args) {
 
