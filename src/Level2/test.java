@@ -5,6 +5,7 @@ import java.util.Vector;
 // 일주일 대기 ㅠ
 // 쫌만더!!
 // D-3
+// 공부좀/..
 public class test {
 	public static void main(String[] args) {
 
