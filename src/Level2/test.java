@@ -4,8 +4,6 @@ import java.util.Vector;
 // 문제 구해서 해보기
 // 일주일 대기 ㅠ
 // 쫌만더!!
-// D-3
-// 공부좀/..
 public class test {
 	public static void main(String[] args) {
 
