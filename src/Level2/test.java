@@ -6,6 +6,7 @@ import java.util.Vector;
 // 쫌만더!!
 // 끝!!!!
 // 다음주만 잘 버텨
+// d-3
 public class test {
 	public static void main(String[] args) {
 
