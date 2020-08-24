@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7893b187-c558-4e7b-9f07-57d011680330" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bin/Level2/다음큰숫자.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Level2/다음큰숫자.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Level2/다음큰숫자.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Level2/다음큰숫자.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Level2/openapi.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Level2/openapi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Level2/openapi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Level2/openapi.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/최종/TextExtract3" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

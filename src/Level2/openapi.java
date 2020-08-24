@@ -8,8 +8,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 // oss
-// ÀÏ¿ç±îÁö µô·¹ÀÌ
-// ¤¾¤¾
+// start
 public class openapi {
     public static void main(String[] args) throws IOException {
         StringBuilder urlBuilder = new StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson"); /*URL*/
