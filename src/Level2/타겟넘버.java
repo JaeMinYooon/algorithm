@@ -6,6 +6,7 @@ public class 타겟넘버 {
 // start
 // ????
 	// 된건가
+	// really
 	public static void main(String[] args) {
 		int[] numbers = { 1, 1, 1, 1, 1 };
 		int target = 3;
