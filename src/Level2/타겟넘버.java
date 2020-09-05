@@ -5,6 +5,7 @@ public class 타겟넘버 {
 // 첨 포문은 5개 갯수 늘리기 둘째 포문은 순서 앞부터 1 2 3 4 5 번째 - 넣어주기
 // last...
 	/// 끝.!!!
+	// 월욜부터 시작!
 	public static void main(String[] args) {
 		int[] numbers = { 1, 1, 1, 1, 1 };
 		int target = 3;
