@@ -6,6 +6,7 @@ public class 타겟넘버 {
 // last...
 	/// 끝.!!!
 	// 월욜부터 시작!
+	// 하루 남았군..!
 	public static void main(String[] args) {
 		int[] numbers = { 1, 1, 1, 1, 1 };
 		int target = 3;
