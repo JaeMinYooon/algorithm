@@ -6,8 +6,8 @@ public class 영어끝말잇기 {
 
 	public static void main(String[] args) {
 		int n = 2;
-		//String words[] = { "tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "dank" };
-		String words[] = {"land", "dream", "mom", "mom"};
+		String words[] = { "tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "dank" };
+		//String words[] = {"land", "dream", "mom", "mom"};
 		System.out.println(solution(n, words)[0] + " " + solution(n,words)[1]);
 	}
 
