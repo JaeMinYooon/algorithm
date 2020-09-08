@@ -23,7 +23,6 @@ public class 괄호변환 {
 
 class erase {
 	public static void test() {
-		// 벡터를 만들고 그 자리마다 채워줄까?
 		Vector<String> place = new Vector<String>();
 		Vector<String> v = new Vector<String>();
 		String p = "";
