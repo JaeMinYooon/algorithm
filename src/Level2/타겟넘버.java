@@ -12,10 +12,8 @@ public class 타겟넘버 {
 
 	public static int solution(int[] numbers, int target) {
 	        int answer = 0;
-	        int sum=0;
 	        int j;
-	        for(int i=0; i<numbers.length; i++) {
-	            sum=0;
+	        for(int i=0; i<numbers.length;) {
 	            for(j=0; j<i; j++) { // - 개수만큼 더하기
 	                numbers[i] *= -1;
 	            }
