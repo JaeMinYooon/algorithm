@@ -5,81 +5,75 @@ import java.util.Vector;
 public class °ýÈ£º¯È¯ {
 
 	public static void main(String[] args) {
-		String p = ")()()()(";
+		String p = "))()))((((";
 
 		System.out.println(solution(p));
 	}
 
 	public static String solution(String p) {
 		String answer = "";
+		int score = 0;
+		int cnt = 0;
+		String temp = "";
+		Vector<String> u_save = new Vector<String>();
+		Vector<String> v_save = new Vector<String>();
+		
+		for(int i = 0 ; i < p.length(); i++) {
+			if(p.charAt(i) == '(')
+				score++;
+			else
+				score--;
+			if(score==0) {
+				String u = "";
+				if(cnt == 0)
+					u = p.substring(cnt, i+1);
+				else
+					u = p.substring(cnt+1, i+1);
+				String v = p.substring(i+1, p.length());
+				//System.out.println(u + " " + v);
+				u_save.add(u);
+				v_save.add(v);
+				cnt = i;
+			}
+				
+		}
+		
+		for(int i = u_save.size()-1 ; i > -1 ; i--) {
+			if(u_save.get(i).charAt(0)=='(') {
+				if(i==u_save.size())
+					continue;
+				temp = v_save.get(i);
+				temp = u_save.get(i) + temp;
+				v_save.set(i, temp);
+			}
+			else if (u_save.get(i).charAt(0)==')') {
+				String v_temp= "";
+				String u_temp = "";
+				
+				v_temp = v_save.get(i);
+				u_temp = u_save.get(i);
+				v_temp = v_temp + ")";
+				v_temp = "(" + v_temp;
+				u_temp = u_temp.substring(1, u_temp.length()-1);
+				
+				u_temp = u_temp.replace('(', '-');
+				u_temp = u_temp.replace(')', '(');
+				u_temp = u_temp.replace('-', ')');
+				
+				v_temp = v_temp + u_temp;
+				if(i == 0)
+					v_save.set(i, v_temp);
+				else
+					v_save.set(i-1, v_temp);
+			}
+				
+		}
+		//System.out.println(u_save);
+		//System.out.println(v_save);
+		
+		answer = v_save.get(0);
         return answer;
 	}
 }
 
 
-
-// Àç±Í·Î °¡ÀÚ
-// ???
-
-
-class erase {
-	public static void test() {
-		Vector<String> place = new Vector<String>();
-		Vector<String> v = new Vector<String>();
-		String p = "";
-		for (int i = 0; i < p.length(); i++) {
-			place.add("-");
-			v.add(i, p.charAt(i) + "");
-		}
-		/*
-		 * for(int i = 0 ; i < p.length()-1; i++) { if(p.charAt(i)=='(') {
-		 * if(p.charAt(i+1)==')'){ place.remove(i); place.add(i,"("); place.remove(i+1);
-		 * place.add(i+1, ")"); } } if(p.charAt(i)==')') { if(p.charAt(i+1)=='('){
-		 * place.remove(i); place.add(i,"("); place.remove(i+1); place.add(i+1, ")"); }
-		 * } } System.out.println(place);
-		 */
-
-		int i = p.length();
-		while (place.contains("-")) {
-			i--;
-			// if(v.get(i).equals("(")) {
-			// if(v.get(i+1).equals(")")) {
-			if (p.charAt(i) == '(') {
-				if (p.charAt(i - 1) == ')') {
-					place.remove(i);
-					place.add(i, ")");
-					place.remove(i - 1);
-					place.add(i - 1, "(");
-					// v.set(i-1, "=");
-					// v.set(i,"=");
-					v.remove(i);
-					v.remove(i - 1);
-				}
-				// if(v.get(i+1).equals("=")) {
-				// i++;
-				// continue;
-				// }
-			}
-			// if(v.get(i).equals(")")) {
-			// if(v.get(i+1).equals("(")) {
-			if (p.charAt(i) == ')') {
-				if (p.charAt(i - 1) == '(') {
-					place.remove(i);
-					place.add(i, ")");
-					place.remove(i - 1);
-					place.add(i - 1, "(");
-					// v.set(i, "=");
-					// v.set(i-1, "=");
-					v.remove(i);
-					v.remove(i - 1);
-				}
-			}
-			System.out.println(place);
-			System.out.println(v + " +++ " + i);
-			if (i == 1)
-				break;
-		}
-
-		System.out.println(v);
-	}
-}
