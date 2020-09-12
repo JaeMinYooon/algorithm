@@ -1,7 +1,5 @@
 package Level2;
 
-import java.util.Vector;
-
 public class test3 {
 
 	public static void main(String[] args) {
@@ -25,9 +23,11 @@ public class test3 {
 			String[] Iword = info[i].split(" ");
 			String[] Qword = query[i].split(" ");
 			int cnt = 0;
+
 			for (int j = 0; j < Iword.length; j++) {
 				info_save[i][j] = Iword[j];
 			}
+
 			for (int j = 0; j < Qword.length; j++) {
 				if (!Qword[j].contentEquals("and")) {
 					query_save[i][cnt] = Qword[j];
@@ -36,35 +36,49 @@ public class test3 {
 			}
 
 		}
-		int count = 0;
+
 		int realcnt = 0;
-		for (int i = 0; i < query_save.length; i++) {
+		for (int n = 0; n < info.length; n++) {
 			realcnt = 0;
-			for (int j = 0; j < info_save.length - 1; j++) {
-				count = 0;
-				for (int n = 0; n < info_save[j].length - 1; n++) {
-					if (query_save[j][n].equals("-")) {
+			for (int i = 0; i < query_save.length; i++) {
+				int count = 0;
+				for (int j = 0; j < query_save[i].length-1; j++) {
+					//System.out.println(i + " " + j + " " + query_save[n][j] + " " +  info[n]);
+					if (query_save[n][j].equals("-")) {
 						count++;
-						continue;
 					}
-					if (query_save[j][n].equals(info_save[j][n])) {
-						//System.out.println(info_save[j][n]);
+					else if (info[i].contains(query_save[n][j])) {
 						count++;
-					} else
+					} 
+					else
 						break;
 				}
-				System.out.println("count = " + count);
 				if (count == 4) {
-					int q = Integer.parseInt(query_save[j][4]);
-					int in = Integer.parseInt(info_save[j][4]);
+					int in = Integer.parseInt(info_save[i][4]);
+					int q = Integer.parseInt(query_save[n][4]);
+					//System.out.println(in + " | " + q);
 					if (in >= q)
 						realcnt++;
 				}
-			}
-			answer[i] = realcnt;
-			System.out.println(answer[i]);
-		}
 
+			}
+			answer[n] =	realcnt;
+			System.out.println(answer[n]);
+		}
+		
 		return answer;
 	}
 }
+
+/*
+ * int count = 0; int realcnt = 0; for (int i = 0; i < query_save.length; i++) {
+ * realcnt = 0; for (int j = 0; j < info_save.length - 1; j++) { count = 0; for
+ * (int n = 0; n < info_save[j].length - 1; n++) { if
+ * (query_save[j][n].equals("-")) { count++; continue; } if
+ * (query_save[j][n].equals(info_save[j][n])) {
+ * //System.out.println(info_save[j][n]); count++; } else break; }
+ * System.out.println("count = " + count); if (count == 4) { int q =
+ * Integer.parseInt(query_save[j][4]); int in =
+ * Integer.parseInt(info_save[j][4]); if (in >= q) realcnt++; } } answer[i] =
+ * realcnt; System.out.println(answer[i]); }
+ */
