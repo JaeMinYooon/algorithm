@@ -3,11 +3,9 @@ package Level2;
 import java.util.Arrays;
 
 public class H_Index {
-	//아직 문제 이해 불가.. 먼소린지 ㅠㅠ
-	
-	
+
 	public static void main(String[] args) {
-		int[] citations = {3,0,6,1,5};
+		int[] citations = {22,42};
 		
 		
 		System.out.println(solution(citations));
@@ -18,10 +16,13 @@ public class H_Index {
 	        
 	        Arrays.parallelSort(citations);
 	        
-	        answer = citations.length/2 + 1;
+	        for(int i = 0 ; i < citations.length ; i++) {
+	        	answer = i;
+	        	if(answer >= citations[citations.length-i-1])
+	        		return answer;
+	        }
 	        
 	        
-	        
-	        return answer;
+	        return answer+1;
 	    }
 }
