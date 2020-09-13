@@ -65,7 +65,7 @@ public class test3 {
 			answer[n] =	realcnt;
 			System.out.println(answer[n]);
 		}
-		
+		// 뭐가 다 되진 않음
 		return answer;
 	}
 }
