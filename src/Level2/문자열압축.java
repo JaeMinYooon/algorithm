@@ -5,7 +5,6 @@ import java.util.Vector;
 public class 문자열압축 {
 
 	public static void main(String[] args) {
-
 		String s = "abcabcdede";
 
 		System.out.println(solution(s));
@@ -43,7 +42,6 @@ public class 문자열압축 {
 			if(answer > longst.length()) {
 				answer = longst.length();
 			}
-			//System.out.println(longst);
 		}
 		
 		return answer;
