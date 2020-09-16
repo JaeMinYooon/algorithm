@@ -3,7 +3,7 @@ package Level2;
 import java.util.Vector;
 
 public class 문자열압축 {
-
+	// 2중포문 겁나면 메소드 짜기
 	public static void main(String[] args) {
 		String s = "abcabcdede";
 
@@ -46,7 +46,6 @@ public class 문자열압축 {
 		
 		return answer;
 	}
-	
 	
 	public static Vector<String> slice(int i, String s) {
 		Vector<String> v = new Vector<String>();
