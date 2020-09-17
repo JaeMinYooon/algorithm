@@ -4,6 +4,7 @@ import java.util.Vector;
 
 public class 문자열압축 {
 	// 2중포문 겁나면 메소드 짜기
+	// 메소드 연습 더하기
 	public static void main(String[] args) {
 		String s = "abcabcdede";
 
