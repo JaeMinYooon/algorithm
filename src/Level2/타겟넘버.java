@@ -1,8 +1,6 @@
 package Level2;
 
 public class 타겟넘버 {
-	// for 안에 for 안에 for for 하면 될듯?
-	// 첨 포문은 5개 갯수 늘리기 둘째 포문은 순서 앞부터 1 2 3 4 5 번째 - 넣어주기
 	public static void main(String[] args) {
 		int[] numbers = { 1, 1, 1, 1, 1 };
 		int target = 3;
@@ -11,18 +9,31 @@ public class 타겟넘버 {
 	}
 
 	public static int solution(int[] numbers, int target) {
-	        int answer = 0;
-	        int j;
-	        for(int i=0; i<numbers.length;) {
-	            for(j=0; j<i; j++) { // - 개수만큼 더하기
-	                numbers[i] *= -1;
-	            }
-	            for( ;;){ // + 개수만큼 더하기
-	              
-	                
-	            }   
-	            }
-	        
-	        return answer;
-	    }
+		int current = numbers[0];
+		int answer = 0;
+		
+		answer += dfs(current, 1, numbers, target);
+		answer += dfs(-current, 1, numbers, target);
+		
+		
+		return answer;
+	}
+	
+	public static int dfs(int prev, int index, int[] numbers, int target) {
+		if(index >= numbers.length) {
+			if(target == prev)
+				return 1;
+			
+			return 0;
+		}
+		
+		int cur1 = prev + numbers[index];
+		int cur2 = prev - numbers[index];
+		int ans = 0;
+		ans += dfs(cur1, index+1, numbers, target);
+		ans += dfs(cur2, index+1, numbers, target);
+		
+		return ans;
+	}
+	
 }
