@@ -6,14 +6,13 @@ public class Æ©ÇÃ {
 
 	public static void main(String[] args) {
 		String s = "{{1,2,3},{2,1},{1,2,4,3},{2}}";
-
+		
 		System.out.println(solution(s));
 	}
 
 	public static int[] solution(String s) {
 		Vector<Integer> answer = new Vector<Integer>();
 		int cnt = 0;
-
 		s = s.substring(1, s.length() - 1);
 		String[] sp = s.split("},");
 
@@ -34,7 +33,6 @@ public class Æ©ÇÃ {
 			v.set(cnt, sp[i]);
 		}
 
-		System.out.println(v);
 		answer.add(Integer.parseInt(v.get(0)));
 
 		for (int i = 1; i < v.size(); i++) {
