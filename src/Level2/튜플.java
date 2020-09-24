@@ -3,7 +3,8 @@ package Level2;
 import java.util.Vector;
 
 public class 튜플 {
-
+	// 좀더 간단하게 할줄알면 좋을듯
+	
 	public static void main(String[] args) {
 		String s = "{{1,2,3},{2,1},{1,2,4,3},{2}}";
 		
