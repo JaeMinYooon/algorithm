@@ -1,7 +1,8 @@
 package Level2;
 
 public class 타겟넘버연습 {
-	// 연습 ㄱㄱ
+	// 연습 ㄱㄱ 
+	// 나이스 데이 ㅎ
 	public static void main(String[] args) {
 		int[] numbers = { 1, 1, 1, 1, 1 };
 		int target = 3;
