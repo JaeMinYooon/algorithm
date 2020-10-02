@@ -2,6 +2,7 @@ package Level2;
 
 public class test11 {
 	// 11번가 문제
+	// all clear
 	public static void main(String[] args) {
 
 		String S = "dog";
