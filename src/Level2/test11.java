@@ -2,7 +2,8 @@ package Level2;
 
 public class test11 {
 	// 11번가 문제
-	// all clear
+	// all clear 
+	// 다른것도 다 풀수 있길..
 	public static void main(String[] args) {
 
 		String S = "dog";
@@ -12,7 +13,7 @@ public class test11 {
 	public static int solution(String S) {
 		int answer = 0;
 		int cntA = 0;
-		int []intS 844= new int [S.length()];
+		int []intS = new int [S.length()];
 		for(int i = 0 ; i < S.length(); i++) {
 			if(S.charAt(i)=='a') {
 				cntA++;
