@@ -3,7 +3,8 @@ package Level2;
 public class 소수만들기 {
 	// 콤비네이션
 	// 2주는 하자잉..dlT
-	// 1일차 무난.
+	// 1일차 
+	// 2일차.. 좀 더 하자 ㅠ
 	static int answer = 0;
 	public static void main(String[] args) {
 		int[] nums = { 1, 2, 7, 6, 4 };
