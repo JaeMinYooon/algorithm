@@ -7,6 +7,7 @@ public class 소수만들기 {
 	// 2일차.. 좀 더 하자 ㅠ
 	// 3일차.. 심각
 	// 4일차.. 무난
+	// 5일차.. 이제 제대로 간다
 	static int answer = 0;
 	public static void main(String[] args) {
 		int[] nums = { 1, 2, 7, 6, 4 };
