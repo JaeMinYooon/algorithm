@@ -9,6 +9,7 @@ public class 소수만들기 {
 	// 4일차.. 무난
 	// 5일차.. 이제 제대로 간다
 	// 6일차.. 애매.. 내일은 쉬고 월욜부터 달리자
+	// 하루 쉼
 	static int answer = 0;
 	public static void main(String[] args) {
 		int[] nums = { 1, 2, 7, 6, 4 };
