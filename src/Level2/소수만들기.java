@@ -11,6 +11,7 @@ public class 소수만들기 {
 	// 6일차.. 애매.. 내일은 쉬고 월욜부터 달리자
 	// 하루 쉼hk wlsWK
 	// 쏘쏘 하지만 집공부 가자
+	// 후.. 이젠 달리자.
 	static int answer = 0;
 	public static void main(String[] args) {
 		int[] nums = { 1, 2, 7, 6, 4 };
