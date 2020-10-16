@@ -13,6 +13,7 @@ public class 소수만들기 {
 	// 쏘쏘 하지만 집공부 가자
 	// 후.. 이젠 달리자.
 	// 더더더더더
+	// 굿 하지만 더
 	static int answer = 0;
 	public static void main(String[] args) {
 		int[] nums = { 1, 2, 7, 6, 4 };
