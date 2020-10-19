@@ -1,7 +1,7 @@
 package Level2;
 
 public class 소수만들기 {
-	
+	// good friend
 	
 	static int answer = 0;
 	public static void main(String[] args) {
