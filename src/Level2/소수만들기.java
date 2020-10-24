@@ -1,11 +1,7 @@
 package Level2;
 
 public class 소수만들기 {
-	// good friend
-	// 낼부턴 하자 
-	// date
-	// 시작하자..
-	// 바쁘게 살아보자.
+	
 	static int answer = 0;
 	public static void main(String[] args) {
 		int[] nums = { 1, 2, 7, 6, 4 };
