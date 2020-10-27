@@ -3,6 +3,7 @@ package Level2;
 public class nhn {
 	// 발전하자.
 	// not to day
+	// 대회준비
 	public static void main(String[] args) {
 		int numOfOrder = 2;
 		String[] orderArr = {"B2(RG)", "3(R2(GB))"};
