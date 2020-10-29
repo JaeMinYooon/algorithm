@@ -5,6 +5,7 @@ public class nhn {
 	// not to day
 	// 대회준비
 	// 반성하자
+	// 하..
 	public static void main(String[] args) {
 		int numOfOrder = 2;
 		String[] orderArr = {"B2(RG)", "3(R2(GB))"};
