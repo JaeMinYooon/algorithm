@@ -6,9 +6,6 @@ public class 가장큰정사각형찾기 {
 		int[][] board = {{0,0,1,1},{1,1,1,1}};
 		//0011
 		//1111
-		// 낫배드
-		// 대회
-		// 낼.. 잘허자
 		System.out.println(solution(board));
 
 	}
