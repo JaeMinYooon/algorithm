@@ -38,6 +38,7 @@ public class ªÔ∞¢¥ﬁ∆ÿ¿Ã {
                 answer[k++] = array[i][j];
             }
         }
+        
         for(int i = 0 ; i < sum ; i++)
         	System.out.print(answer[i] + " ");
         return answer;
