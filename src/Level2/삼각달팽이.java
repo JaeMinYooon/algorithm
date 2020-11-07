@@ -39,8 +39,9 @@ public class ªÔ∞¢¥ﬁ∆ÿ¿Ã {
             }
         }
         
-        for(int i = 0 ; i < sum ; i++)
+        for(int i = 0 ; i < sum ; i++) {
         	System.out.print(answer[i] + " ");
+        }
         return answer;
     }
 }
