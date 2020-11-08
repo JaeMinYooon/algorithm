@@ -3,7 +3,7 @@ package Level3;
 import java.util.HashMap;
 
 public class 베스트앨범 {
-
+	// 해시
 	public static void main(String[] args) {
 		String[] genres = {"classic", "pop", "classic", "classic", "pop"};
 		int[] plays = {500, 600, 150, 800, 2500};
