@@ -4,7 +4,7 @@ public class 수식최대화 {
 
 	public static void main(String[] args) {
 		String expression = "100-200*300-500+20";
-	// 내일 ㄱㄱ
+		
 		System.out.println(solution(expression));
 	}
 	
