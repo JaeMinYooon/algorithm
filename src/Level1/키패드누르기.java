@@ -17,6 +17,7 @@ public class 키패드누르기 {
 		int lx = 0, ly=0;
 		int nx=0, ny=0;
 		int[][] array = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}};
+		
 		for(int i = 0 ; i < numbers.length ; i++) {
 			if(numbers[i]==0) {
 				numbers[i] = 11;
