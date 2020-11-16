@@ -1,10 +1,7 @@
 package 마이다스;
 
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Vector;
-
-import java.util.*;
 public class test {
 
 	public static void main(String[] args) {

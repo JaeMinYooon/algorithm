@@ -1,9 +1,11 @@
+package 마이다스;
+
 import java.util.*;
 class Solution {
     Vector<int[]> answers = new Vector<>();
 
     public int [] solution(int[] cookies, int k) {
-        int[] answer = new int[1];
+       // int[] answer = new int[1];
         int n = cookies.length;
         int[] output = new int[n];
         boolean[] visited = new boolean[n];
