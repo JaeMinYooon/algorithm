@@ -1,5 +1,5 @@
 package 마이다스;
-//study hard
+
 import java.util.Comparator;
 import java.util.Vector;
 public class test {
