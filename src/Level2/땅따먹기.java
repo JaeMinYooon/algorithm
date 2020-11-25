@@ -7,7 +7,7 @@ public class 땅따먹기 {
 	static int[][] arr;
 	static int count = 0;
 //풀리는데 속도 문제 있.
-	
+	// 알집!
 	public static void main(String[] args) {
 		int[][] land = { { 1, 2, 3, 5 }, { 5, 6, 7, 8 }, { 4, 3, 2, 1 } };
 		//int[][] land = {{9,5,2,3},{9,8,6,7},{8,9,7,1},{100,9,8,1}};
