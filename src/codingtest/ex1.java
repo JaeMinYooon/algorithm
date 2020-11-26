@@ -1,4 +1,4 @@
-package 마이다스;
+package codingtest;
 
 import java.util.ArrayList;
 import java.util.List;
