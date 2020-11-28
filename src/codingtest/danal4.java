@@ -5,8 +5,8 @@ import java.util.Vector;
 public class danal4 {
 
 	public static void main(String[] args) {
-		int[][] customer = {{1, 1}, {2, 1}, {3, 1}, {2, 0}, {2, 1}};
-        int[][] customer2 = {{2, 1}, {1, 1}, {3, 1}, {1, 0}, {1, 1}, {2, 0}, {2, 1}};
+		//int[][] customer = {{1, 1}, {2, 1}, {3, 1}, {2, 0}, {2, 1}};
+        //int[][] customer2 = {{2, 1}, {1, 1}, {3, 1}, {1, 0}, {1, 1}, {2, 0}, {2, 1}};
         //solution(customer, 2);
         solution();
 	}

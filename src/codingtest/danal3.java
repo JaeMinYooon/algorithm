@@ -14,14 +14,12 @@ public class danal3 {
         
         int count = 0;
         int i = 0;
-        int pre = price[0];
         for(i = 0 ; i < price.length ; i++) {
         	for(int j = i+1 ; j < price.length ; j++) {
         		count++;
         		if(price[i] < price[j]) {
         			answer[i]=count;
         			count = 0;
-        			pre = price[j];
         			break;
         		}
         	}
