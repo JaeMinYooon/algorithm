@@ -21,6 +21,7 @@ public class est {
 						cnt++;
 					}
 				}
+				
 				strings[i] = card_numbers[i].replaceAll("-", "");
 
 				if (cnt == 3 && strings[i].length() == 16) {
