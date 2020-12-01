@@ -6,12 +6,10 @@ public class danal3 {
 		int[] price = {5,1,1,1,1,1,1,1,1,10};
 		
 		solution(price);
-
 	}
 	public static int[] solution(int[] price) {
 		
         int[] answer = new int[price.length];
-        
         int count = 0;
         int i = 0;
         for(i = 0 ; i < price.length ; i++) {
