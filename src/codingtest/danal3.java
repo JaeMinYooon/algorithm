@@ -9,7 +9,7 @@ public class danal3 {
 	}
 	public static int[] solution(int[] price) {
 		
-        int[] answer = new int[price.length];
+        int[] answer = new int[price.length];	
         int count = 0;
         int i = 0;
         for(i = 0 ; i < price.length ; i++) {
