@@ -7,18 +7,20 @@ import java.util.LinkedList;
 public class 단체사진찍기 {
 	static String[] friends = { "A", "C", "F", "J", "M", "N", "R", "T" };
 	static ArrayList<String> friend = new ArrayList<>(Arrays.asList(friends));
-	static int answer = 0;
+	static int answer;
 
 	public static void main(String[] args) {
 		int n = 2;
 		String[] data = { "N~F=0", "R~T>2"};
 		// System.out.println(data[0].charAt(4)-'0'+1);
+	
 		System.out.println(solution(n, data));
 	}
 
 	public static int solution(int n, String[] data) {
 		LinkedList<Integer> perArr = new LinkedList<Integer>();
 		int[] perCheck = new int[8];
+		answer = 0;
 		permutation(8, 8, perArr, perCheck, data, n);
 
 		return answer;
