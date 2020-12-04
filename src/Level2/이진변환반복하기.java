@@ -17,9 +17,7 @@ public class 이진변환반복하기 {
         String tmp = "";
         while(true) {
         	tmp = s+1;
-        	//if(s.charAt(s.length()-1)=='0')
-        	//	zerocount +=s.split("0").length;
-        	//else
+        	
         	zerocount +=tmp.split("0").length-1;
         	s = s.replaceAll("0","");
         	s = Integer.toBinaryString(s.length());
