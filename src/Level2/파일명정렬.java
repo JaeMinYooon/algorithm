@@ -1,4 +1,5 @@
-package Level2;
+package Level2;.
+
 
 public class 파일명정렬 {
 
@@ -38,8 +39,6 @@ public class 파일명정렬 {
         		tail[i] = "(빈 문자열)";   	
         }
        
-        //for(int n = 0 ; n < files.length-1 ; n++) {
-        //	for(int m = n+1 ; m < files.length ; m++) {
         for(int n = 0 ; n < files.length ; n++) {
 			for(int m = 0 ; m < files.length -n -1 ; m ++) {
 		    		if(head[m].toLowerCase().compareTo(head[m+1].toLowerCase()) > 0) { //>
@@ -56,12 +55,7 @@ public class 파일명정렬 {
 		    			
         	}
         }
-        for(int i = 0 ; i < files.length ; i++){
-        	//System.out.print(head[i] + " | " + number[i] + " | " + tail[i] + " | ");
-        	System.out.println(files[i]);
-        }
         
-        System.out.println("");
         for(int n = 0 ; n < files.length ; n++) {
 			for(int m = 0 ; m < files.length -n -1 ; m ++) {
 				if(head[m].toLowerCase().contentEquals(head[m+1].toLowerCase())) {
