@@ -1,4 +1,4 @@
-package Level2;.
+package Level2;
 
 
 public class 파일명정렬 {
@@ -74,13 +74,6 @@ public class 파일명정렬 {
 		    			
         	}
         }
-        
-        for(int i = 0 ; i < files.length ; i++){
-        	//System.out.print(head[i] + " | " + number[i] + " | " + tail[i] + " | ");
-        	System.out.println(files[i]);
-        }
-        
-        
         return files;
     }
 }
