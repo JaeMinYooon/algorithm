@@ -19,6 +19,12 @@ public class 수식최대화 {
         	step++;
         }
         
+        // * - +
+        for(int i = 0 ; i < exp.length ; i++) {
+        	if(exp[i] == '*') {
+        		
+        	}
+        }
         
         
         return answer;
