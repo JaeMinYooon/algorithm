@@ -22,7 +22,9 @@ public class n진수게임 {
 		while (value >= 1) {
 			builder.insert(0, value % n);
 			value /= n;
+			
 		}
+		
 		System.out.println(builder.toString());
 
 		return answer;
