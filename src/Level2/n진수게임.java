@@ -13,7 +13,7 @@ public class n진수게임 {
 
 	public static String solution(int n, int t, int m, int p) {
 		String answer = "";
-		String sumAnswer = "0";
+		//String sumAnswer = "0";
 		int value = 13;
 		
 		//while (answer.length() < t*m) 		

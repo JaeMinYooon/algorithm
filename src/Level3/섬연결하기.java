@@ -10,7 +10,7 @@ public class º∂ø¨∞·«œ±‚ {
 	}
 
 	public static int solution(int n, int[][] costs) {
-		int answer = 0;
+		//int answer = 0;
 		int[][] grape = new int[n][n];
 		for (int i = 0; i < costs.length; i++) {
 			int x = costs[i][0];

@@ -27,8 +27,8 @@ public class 가장큰정사각형찾기 {
         	}
         }
 
-        for(int y = 1 ; y < board.length ; y++) {
-        	for(int x = 1 ; x < board[y].length ; x++) {
+        for(int y = 0 ; y < board.length ; y++) {
+        	for(int x = 0 ; x < board[y].length ; x++) {
         		if(board[y][x] > 0)
         			answer = Math.max(answer, board[y][x]);
         	}
