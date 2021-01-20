@@ -1,14 +1,11 @@
 package 구름LEVEL;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 public class _3과5의배수 {
 
 	public static void main(String[] args) {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		//String input = br.readLine();
-		int num = 5;
+		//int num = 5;
 		
 		int answer = 0;
 		//for(int i = 0 ; i <  ; i++){
