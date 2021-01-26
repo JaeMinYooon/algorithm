@@ -17,10 +17,10 @@ public class 베스트앨범 {
         for(int i = 0; i < genres.length; i++) {                             
             hm.put(genres[i], hm.getOrDefault(genres[i], 0) + plays[i]); // getOrDefault 찾는 키가 존재하면 해당 키의 값을 반환하고 없으면 기본값을 반환함
         }
-        int firstIndex = 0;
-        int secondIndex = 0;
-        
+        //int firstIndex = 0;
+        //int secondIndex = 0;
+        System.out.println(hm);
         return answer;
     }
 }
-//https://tosuccess.tistory.com/40 참고msep
+//https://tosuccess.tistory.com/40 참고
