@@ -1,6 +1,6 @@
 package Level3;
 
-public class nx2Ÿ�ϸ� {
+public class nx2Ÿ�ϸ� {
 
 	public static void main(String[] args) {
 		int n = 5;
